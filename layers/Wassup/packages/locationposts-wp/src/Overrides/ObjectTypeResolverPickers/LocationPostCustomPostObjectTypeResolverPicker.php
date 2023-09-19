@@ -1,0 +1,14 @@
+<?php
+
+declare(strict_types=1);
+
+namespace PoPCMSSchema\LocationPostsWP\Overrides\ObjectTypeResolverPickers;
+
+use PoPCMSSchema\CustomPostsWP\ObjectTypeResolverPickers\CustomPostObjectTypeResolverPickerInterface;
+use PoPCMSSchema\CustomPostsWP\ObjectTypeResolverPickers\NoCastCustomPostTypeResolverPickerTrait;
+use PoPCMSSchema\LocationPosts\ObjectTypeResolverPickers\LocationPostCustomPostObjectTypeResolverPicker as UpstreamLocationPostCustomPostObjectTypeResolverPicker;
+
+class LocationPostCustomPostObjectTypeResolverPicker extends UpstreamLocationPostCustomPostObjectTypeResolverPicker implements CustomPostObjectTypeResolverPickerInterface
+{
+    use NoCastCustomPostTypeResolverPickerTrait;
+}

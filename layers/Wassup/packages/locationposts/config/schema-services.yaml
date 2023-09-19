@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+
+    PoPCMSSchema\LocationPosts\FieldResolvers\:
+        resource: '../src/FieldResolvers/*'
+
+    PoPCMSSchema\LocationPosts\ObjectTypeResolverPickers\:
+        resource: '../src/ObjectTypeResolverPickers/*'
+
+    PoPCMSSchema\LocationPosts\TypeResolvers\:
+        resource: '../src/TypeResolvers/*'
+
+    PoPCMSSchema\LocationPosts\RelationalTypeDataLoaders\:
+        resource: '../src/RelationalTypeDataLoaders/*'
