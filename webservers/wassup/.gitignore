@@ -1,0 +1,5 @@
+/vendor/
+/wordpress/
+/defaults.local.env
+/wp-config.php.tmp
+/composer.local.json
