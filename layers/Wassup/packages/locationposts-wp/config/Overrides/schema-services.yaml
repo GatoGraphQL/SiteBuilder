@@ -1,0 +1,7 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+
+    PoPCMSSchema\LocationPosts\ObjectTypeResolverPickers\LocationPostCustomPostObjectTypeResolverPicker:
+        class: '\PoPCMSSchema\LocationPostsWP\Overrides\ObjectTypeResolverPickers\LocationPostCustomPostObjectTypeResolverPicker'

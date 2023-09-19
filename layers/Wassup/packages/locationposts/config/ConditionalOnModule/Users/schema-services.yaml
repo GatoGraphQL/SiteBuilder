@@ -1,0 +1,7 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+
+    PoPCMSSchema\LocationPosts\ConditionalOnModule\Users\FieldResolvers\:
+        resource: '../../../src/ConditionalOnModule/Users/FieldResolvers/*'
