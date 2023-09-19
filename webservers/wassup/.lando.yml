@@ -77,8 +77,6 @@ services:
         - '../../layers/SiteBuilder/packages/site-wp:/app/vendor/getpop/site-wp'
         - '../../layers/SiteBuilder/packages/spa:/app/vendor/getpop/spa'
         - >-
-          ../../layers/WPSchema/packages/block-metadata-for-wp:/app/vendor/pop-wp-schema/block-metadata-for-wp
-        - >-
           ../../layers/CMSSchema/packages/categories:/app/vendor/pop-cms-schema/categories
         - >-
           ../../layers/CMSSchema/packages/categories-wp:/app/vendor/pop-cms-schema/categories-wp
