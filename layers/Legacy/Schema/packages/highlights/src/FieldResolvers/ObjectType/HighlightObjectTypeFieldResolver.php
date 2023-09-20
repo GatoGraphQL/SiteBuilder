@@ -83,7 +83,7 @@ class HighlightObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             'title' => $this->getStringScalarTypeResolver(),
             'excerpt' => $this->getStringScalarTypeResolver(),
             'content' => $this->getStringScalarTypeResolver(),
-            'highlightedPostURL' => $this->getUrlScalarTypeResolver(),
+            'highlightedPostURL' => $this->getURLScalarTypeResolver(),
             'highlightedpost' => CustomPostUnionTypeHelpers::getCustomPostUnionOrTargetObjectTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };

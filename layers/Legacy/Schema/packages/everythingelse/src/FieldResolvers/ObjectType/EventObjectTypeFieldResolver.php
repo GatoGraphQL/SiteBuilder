@@ -97,8 +97,8 @@ class EventObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             'dates' => $this->getStringScalarTypeResolver(),
             'times' => $this->getStringScalarTypeResolver(),
             'startDateReadable' => $this->getStringScalarTypeResolver(),
-            'daterange' => $this->getJsonObjectScalarTypeResolver(),
-            'daterangetime' => $this->getJsonObjectScalarTypeResolver(),
+            'daterange' => $this->getJSONObjectScalarTypeResolver(),
+            'daterangetime' => $this->getJSONObjectScalarTypeResolver(),
             'locations' => $this->getLocationObjectTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };

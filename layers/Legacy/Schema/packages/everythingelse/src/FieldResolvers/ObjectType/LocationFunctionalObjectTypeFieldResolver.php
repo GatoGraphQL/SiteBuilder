@@ -57,7 +57,7 @@ class LocationFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFieldR
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'mapURL' => $this->getUrlScalarTypeResolver(),
+            'mapURL' => $this->getURLScalarTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };
     }

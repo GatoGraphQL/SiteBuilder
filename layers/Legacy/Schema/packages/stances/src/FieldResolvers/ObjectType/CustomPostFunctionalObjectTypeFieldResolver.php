@@ -136,13 +136,13 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'addStanceURL' => $this->getUrlScalarTypeResolver(),
+            'addStanceURL' => $this->getURLScalarTypeResolver(),
             'loggedInUserStances' => $this->getIntScalarTypeResolver(),
             'hasLoggedInUserStances' => $this->getBooleanScalarTypeResolver(),
-            'editStanceURL' => $this->getUrlScalarTypeResolver(),
-            'postStancesProURL' => $this->getUrlScalarTypeResolver(),
-            'postStancesNeutralURL' => $this->getUrlScalarTypeResolver(),
-            'postStancesAgainstURL' => $this->getUrlScalarTypeResolver(),
+            'editStanceURL' => $this->getURLScalarTypeResolver(),
+            'postStancesProURL' => $this->getURLScalarTypeResolver(),
+            'postStancesNeutralURL' => $this->getURLScalarTypeResolver(),
+            'postStancesAgainstURL' => $this->getURLScalarTypeResolver(),
             'createStanceButtonLazy' => $this->getIdScalarTypeResolver(),
             'stancesLazy' => $this->getIdScalarTypeResolver(),
             'stanceName' => $this->getStringScalarTypeResolver(),

@@ -55,7 +55,7 @@ class CommentsCustomPostObjectTypeFieldResolver extends AbstractObjectTypeFieldR
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'commentsURL' => $this->getUrlScalarTypeResolver(),
+            'commentsURL' => $this->getURLScalarTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };
     }

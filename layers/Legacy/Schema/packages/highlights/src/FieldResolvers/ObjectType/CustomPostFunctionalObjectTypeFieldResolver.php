@@ -57,7 +57,7 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'addhighlightURL' => $this->getUrlScalarTypeResolver(),
+            'addhighlightURL' => $this->getURLScalarTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };
     }

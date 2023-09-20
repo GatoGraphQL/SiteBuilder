@@ -56,7 +56,7 @@ class QueryableObjectPostObjectTypeFieldResolver extends AbstractObjectTypeField
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'endpoint' => $this->getUrlScalarTypeResolver(),
+            'endpoint' => $this->getURLScalarTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };
     }

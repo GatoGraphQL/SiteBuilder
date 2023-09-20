@@ -51,7 +51,7 @@ abstract class AbstractLocationFunctionalObjectTypeFieldResolver extends Abstrac
     public function getFieldTypeResolver(ObjectTypeResolverInterface $objectTypeResolver, string $fieldName): ConcreteTypeResolverInterface
     {
         return match($fieldName) {
-            'locationsmapURL' => $this->getUrlScalarTypeResolver(),
+            'locationsmapURL' => $this->getURLScalarTypeResolver(),
             default => parent::getFieldTypeResolver($objectTypeResolver, $fieldName),
         };
     }
