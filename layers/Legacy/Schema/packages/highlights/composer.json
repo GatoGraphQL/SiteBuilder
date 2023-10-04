@@ -38,6 +38,8 @@
         "fix-style": "phpcbf src tests",
         "analyse": "phpstan analyse"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "0.8-dev"
