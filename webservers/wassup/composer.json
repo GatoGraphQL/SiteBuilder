@@ -24,6 +24,8 @@
         "wpackagist-plugin/events-manager":"^5.9",
         "wpackagist-plugin/aryo-activity-log":"^2.5"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
