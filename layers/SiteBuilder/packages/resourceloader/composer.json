@@ -149,7 +149,7 @@
     },
     "type": "library",
     "description": "Load resources for the website",
-    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "Gato", "GatoGraphQL", "resourceloader"],
+    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "resourceloader"],
     "homepage": "https://github.com/getpop/resourceloader",
     "license": "GPL-2.0-or-later",
     "authors": [

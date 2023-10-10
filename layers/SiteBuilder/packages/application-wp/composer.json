@@ -148,7 +148,7 @@
     },
     "type": "library",
     "description": "Implementation for WordPress of contracts from package \"Application\"",
-    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "Gato", "GatoGraphQL", "application-wp"],
+    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "application-wp"],
     "homepage": "https://github.com/getpop/application-wp",
     "license": "GPL-2.0-or-later",
     "authors": [
