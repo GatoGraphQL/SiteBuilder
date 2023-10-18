@@ -271,19 +271,18 @@ services:
       - >-
         wp config create --dbname=wordpress --dbuser=wordpress
         --dbpass=wordpress --dbhost=database --skip-check --force
-        --path=wordpress
       - >-
         wp core install --url=wassup.lndo.site --title="Wassup"
         --admin_user=admin --admin_password=admin
-        --admin_email=admin@example.com --path=wordpress
-      - wp config set WP_DEBUG true --raw --path=wordpress
-      - wp config set WP_DEBUG_DISPLAY false --raw --path=wordpress
+        --admin_email=admin@example.com
+      - wp config set WP_DEBUG true --raw
+      - wp config set WP_DEBUG_DISPLAY false --raw
       - sed "s#require_once ABSPATH . 'wp-settings.php';#require_once(__DIR__ . '/../vendor/autoload.php'); require_once(__DIR__ . '/../code-src/initialize-pop-modules.php'); require_once  ABSPATH  .  'wp-settings.php' ;#g" wordpress/wp-config.php > wp-config.php.tmp
       - mv wp-config.php.tmp wordpress/wp-config.php
-      - wp plugin activate engine-wp-bootloader --path=wordpress
-      - wp plugin activate aryo-activity-log --path=wordpress
+      - wp plugin activate engine-wp-bootloader
+      - wp plugin activate aryo-activity-log
       - cp assets/.htaccess wordpress
-      - wp rewrite structure '/%postname%/' --hard --path=wordpress
+      - wp rewrite structure '/%postname%/' --hard
 env_file:
   - defaults.env
   - defaults.local.env
