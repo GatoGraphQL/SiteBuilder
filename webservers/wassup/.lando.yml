@@ -125,6 +125,10 @@ services:
           ../../layers/CMSSchema/packages/highlights-wp:/app/vendor/pop-cms-schema/highlights-wp
         - '../../layers/CMSSchema/packages/media:/app/vendor/pop-cms-schema/media'
         - '../../layers/CMSSchema/packages/media-wp:/app/vendor/pop-cms-schema/media-wp'
+        - >-
+          ../../layers/CMSSchema/packages/media-mutations:/app/vendor/pop-cms-schema/media-mutations
+        - >-
+          ../../layers/CMSSchema/packages/media-mutations-wp:/app/vendor/pop-cms-schema/media-mutations-wp
         - '../../layers/CMSSchema/packages/menus:/app/vendor/pop-cms-schema/menus'
         - '../../layers/CMSSchema/packages/menus-wp:/app/vendor/pop-cms-schema/menus-wp'
         - '../../layers/CMSSchema/packages/settings:/app/vendor/pop-cms-schema/settings'
@@ -283,6 +287,7 @@ services:
       - wp plugin activate aryo-activity-log
       - cp assets/.htaccess wordpress
       - wp rewrite structure '/%postname%/' --hard
+      - wp option update uploads_use_yearmonth_folders '0'
 env_file:
   - defaults.env
   - defaults.local.env

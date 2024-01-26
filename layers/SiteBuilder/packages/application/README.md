@@ -39,11 +39,11 @@ Initialize the component:
 
 PoP has been built to support decentralization: modules can fetch their data from a different domain/subdomain from which the application is hosted. For instance, an application can have its components retrieved from subdomains:
 
-![Modules can have their data fetched from different domains and subdomains](https://uploads.getpop.org/wp-content/uploads/2017/02/application-wireframe.png)
+![Modules can have their data fetched from different domains and subdomains](https://uploads.getpop.org/wp-content/uploads/application-wireframe.png)
 
 A single component is also able to have many sources of data, each of them coming from a different domain/subdomain. For instance, the [events calendar in SukiPoP.com](https://sukipop.com/en/calendar/) displays events from several external sites in a unique calendar, painting events with a different color according to the source domain:
 
-![Multidomain events calendar](https://uploads.getpop.org/wp-content/uploads/2018/12/multidomain-events-calendar.png)
+![Multidomain events calendar](https://uploads.getpop.org/wp-content/uploads/multidomain-events-calendar.png)
 
 ## Architecture Design and Implementation
 
