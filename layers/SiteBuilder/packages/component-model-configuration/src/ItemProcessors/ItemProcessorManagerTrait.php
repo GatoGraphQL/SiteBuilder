@@ -50,7 +50,7 @@ trait ItemProcessorManagerTrait
 
         // Return the reference to the ItemProcessor instance, and created first if it doesn't exist
         if (!$this->hasItemBeenLoaded($item)) {
-            // If this class was overriden, use that one instead. Priority goes like this:
+            // If this class was overridden, use that one instead. Priority goes like this:
             // 1. Overriden
             // 3. Same class as requested
             if ($class = $this->overridingClasses[$itemProcessorClass][$itemName] ?? null) {

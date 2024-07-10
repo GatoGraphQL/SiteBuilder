@@ -65,7 +65,7 @@ class ChangeUserPasswordMutationResolver extends AbstractMutationResolver
             //     )
             // );
             $errors = [];
-            $errors[] = $this->getTranslationAPI()->__('The password cannot be emtpy.', 'pop-application');
+            $errors[] = $this->getTranslationAPI()->__('The password cannot be empty.', 'pop-application');
         } elseif (strlen($password) < 8) {
             // @todo Migrate from string to FeedbackItemProvider
             // $objectTypeFieldResolutionFeedbackStore->addError(

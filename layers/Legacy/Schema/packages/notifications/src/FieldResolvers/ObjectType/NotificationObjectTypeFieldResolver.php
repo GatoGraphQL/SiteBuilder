@@ -427,7 +427,7 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
                 return null;
 
             case 'target':
-                // By default, no need to specify the target. This can be overriden
+                // By default, no need to specify the target. This can be overridden
                 return null;
 
             case 'message':

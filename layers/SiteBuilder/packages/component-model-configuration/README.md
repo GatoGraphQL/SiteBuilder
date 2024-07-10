@@ -327,7 +327,7 @@ And the merged configuration will look like this:
 }
 ```
 
-But now, the value for property "descendants" in the cached object has been overriden with the value from the second response, bringing us to the second issue stated earlier on about differing property values. Then, if loading again the URL for the first response and reusing the cached configuration, below "component1" it will print "component3" instead of "component2" as it should be.
+But now, the value for property "descendants" in the cached object has been overridden with the value from the second response, bringing us to the second issue stated earlier on about differing property values. Then, if loading again the URL for the first response and reusing the cached configuration, below "component1" it will print "component3" instead of "component2" as it should be.
 
 The issue about differing properties arises from the fact that configuration values are set not only according to the component hierarchy, but also to the requested URL. For instance, the following component hierarchy:
 
