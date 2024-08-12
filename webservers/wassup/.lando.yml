@@ -81,6 +81,10 @@ services:
         - >-
           ../../layers/CMSSchema/packages/categories-wp:/app/vendor/pop-cms-schema/categories-wp
         - >-
+          ../../layers/CMSSchema/packages/category-mutations:/app/vendor/pop-cms-schema/category-mutations
+        - >-
+          ../../layers/CMSSchema/packages/category-mutations-wp:/app/vendor/pop-cms-schema/category-mutations-wp
+        - >-
           ../../layers/CMSSchema/packages/comment-mutations:/app/vendor/pop-cms-schema/comment-mutations
         - >-
           ../../layers/CMSSchema/packages/comment-mutations-wp:/app/vendor/pop-cms-schema/comment-mutations-wp
@@ -180,6 +184,10 @@ services:
           ../../layers/CMSSchema/packages/stances-wp:/app/vendor/pop-cms-schema/stances-wp
         - '../../layers/CMSSchema/packages/tags:/app/vendor/pop-cms-schema/tags'
         - '../../layers/CMSSchema/packages/tags-wp:/app/vendor/pop-cms-schema/tags-wp'
+        - >-
+          ../../layers/CMSSchema/packages/tag-mutations:/app/vendor/pop-cms-schema/tag-mutations
+        - >-
+          ../../layers/CMSSchema/packages/tag-mutations-wp:/app/vendor/pop-cms-schema/tag-mutations-wp
         - >-
           ../../layers/CMSSchema/packages/taxonomies:/app/vendor/pop-cms-schema/taxonomies
         - >-
