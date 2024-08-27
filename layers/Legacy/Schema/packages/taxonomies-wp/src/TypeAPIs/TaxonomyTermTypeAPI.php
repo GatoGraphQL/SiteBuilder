@@ -8,7 +8,6 @@ use PoPSchema\SchemaCommons\Constants\QueryOptions;
 use PoPCMSSchema\SchemaCommons\DataLoading\ReturnTypes;
 use PoPCMSSchema\Taxonomies\TypeAPIs\TaxonomyTermTypeAPIInterface;
 use WP_Error;
-use WP_Taxonomy;
 
 use function wp_set_post_terms;
 
@@ -17,19 +16,6 @@ use function wp_set_post_terms;
  */
 class TaxonomyTermTypeAPI implements TaxonomyTermTypeAPIInterface
 {
-    /**
-     * @return string[]|WP_Taxonomy[]
-     */
-    public function getCustomPostTypeTaxonomies(string $post_type): array
-    {
-        return get_object_taxonomies($post_type);
-    }
-    public function isTaxonomyHierarchical(string $taxonomy): bool
-    {
-        $taxonomy_object = get_taxonomy($taxonomy);
-        return $taxonomy_object->hierarchical;
-    }
-    
     /**
      * @return array<string|int>|object[]
      * @param array<string,mixed> $options

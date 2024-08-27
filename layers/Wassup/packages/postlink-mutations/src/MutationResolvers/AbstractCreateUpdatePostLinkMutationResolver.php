@@ -8,9 +8,9 @@ use PoP\ComponentModel\QueryResolution\FieldDataAccessorInterface;
 use PoP_ApplicationProcessors_Utils;
 use PoPCMSSchema\CustomPostMeta\Utils;
 use PoPSitesWassup\CustomPostLinkMutations\MutationResolvers\MutationResolverUtils;
-use PoPSitesWassup\PostMutations\MutationResolvers\AbstractCreateUpdatePostMutationResolver;
+use PoPSitesWassup\PostMutations\MutationResolvers\AbstractCreateOrUpdatePostMutationResolver;
 
-abstract class AbstractCreateUpdatePostLinkMutationResolver extends AbstractCreateUpdatePostMutationResolver
+abstract class AbstractCreateUpdatePostLinkMutationResolver extends AbstractCreateOrUpdatePostMutationResolver
 {
     protected function getCategories(FieldDataAccessorInterface $fieldDataAccessor): ?array
     {

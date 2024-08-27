@@ -9,7 +9,7 @@ namespace EverythingElse\PoPCMSSchema\Taxonomies\TypeAPIs;
  */
 interface TaxonomyTermTypeAPIInterface
 {
-    public function getCustomPostTypeTaxonomies($post_type);
+    public function getCustomPostTypeTaxonomyNames($post_type);
     public function isTaxonomyHierarchical($taxonomy);
     public function getTaxonomyTerms($taxonomy, $options = []);
     public function setPostTerms($post_id, $tags, $taxonomy, $append = false);

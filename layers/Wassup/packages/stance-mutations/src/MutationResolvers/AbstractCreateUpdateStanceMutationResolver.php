@@ -152,14 +152,11 @@ abstract class AbstractCreateUpdateStanceMutationResolver extends AbstractCreate
         App::doAction('GD_CreateUpdate_Stance:createAdditionals', $post_id, $fieldDataAccessor);
     }
 
-    /**
-     * @param array<string,mixed> $log
-     */
-    protected function updateAdditionals(string|int $post_id, FieldDataAccessorInterface $fieldDataAccessor, array $log): void
+    protected function updateAdditionals(string|int $post_id, FieldDataAccessorInterface $fieldDataAccessor): void
     {
-        parent::updateAdditionals($post_id, $fieldDataAccessor, $log);
+        parent::updateAdditionals($post_id, $fieldDataAccessor);
 
         // Allow for URE to add the AuthorRole meta value
-        App::doAction('GD_CreateUpdate_Stance:updateAdditionals', $post_id, $fieldDataAccessor, $log);
+        App::doAction('GD_CreateUpdate_Stance:updateAdditionals', $post_id, $fieldDataAccessor);
     }
 }

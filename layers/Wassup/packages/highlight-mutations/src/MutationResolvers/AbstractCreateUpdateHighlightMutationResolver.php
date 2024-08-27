@@ -87,14 +87,11 @@ abstract class AbstractCreateUpdateHighlightMutationResolver extends AbstractCre
         App::doAction('GD_CreateUpdate_Highlight:createAdditionals', $post_id, $fieldDataAccessor);
     }
 
-    /**
-     * @param array<string,mixed> $log
-     */
-    protected function updateAdditionals(string|int $post_id, FieldDataAccessorInterface $fieldDataAccessor, array $log): void
+    protected function updateAdditionals(string|int $post_id, FieldDataAccessorInterface $fieldDataAccessor): void
     {
-        parent::updateAdditionals($post_id, $fieldDataAccessor, $log);
+        parent::updateAdditionals($post_id, $fieldDataAccessor);
 
         // Allow to create a Notification
-        App::doAction('GD_CreateUpdate_Highlight:updateAdditionals', $post_id, $fieldDataAccessor, $log);
+        App::doAction('GD_CreateUpdate_Highlight:updateAdditionals', $post_id, $fieldDataAccessor);
     }
 }

@@ -6,7 +6,7 @@ namespace PoPSitesWassup\PostMutations\MutationResolvers;
 
 use PoPCMSSchema\CustomPostMutations\MutationResolvers\UpdateCustomPostMutationResolverTrait;
 
-class UpdatePostMutationResolver extends AbstractCreateUpdatePostMutationResolver
+class UpdatePostMutationResolver extends AbstractCreateOrUpdatePostMutationResolver
 {
     use UpdateCustomPostMutationResolverTrait;
 }

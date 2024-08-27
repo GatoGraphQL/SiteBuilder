@@ -98,9 +98,13 @@ services:
         - >-
           ../../layers/CMSSchema/packages/custompost-tag-mutations:/app/vendor/pop-cms-schema/custompost-tag-mutations
         - >-
+          ../../layers/CMSSchema/packages/custompost-tag-mutations-wp:/app/vendor/pop-cms-schema/custompost-tag-mutations-wp
+        - >-
           ../../layers/CMSSchema/packages/custompost-categories-wp:/app/vendor/pop-cms-schema/custompost-categories-wp
         - >-
           ../../layers/CMSSchema/packages/custompost-category-mutations:/app/vendor/pop-cms-schema/custompost-category-mutations
+        - >-
+          ../../layers/CMSSchema/packages/custompost-category-mutations-wp:/app/vendor/pop-cms-schema/custompost-category-mutations-wp
         - >-
           ../../layers/CMSSchema/packages/custompost-tags-wp:/app/vendor/pop-cms-schema/custompost-tags-wp
         - >-
@@ -152,13 +156,9 @@ services:
         - >-
           ../../layers/CMSSchema/packages/post-category-mutations:/app/vendor/pop-cms-schema/post-category-mutations
         - >-
-          ../../layers/CMSSchema/packages/post-category-mutations-wp:/app/vendor/pop-cms-schema/post-category-mutations-wp
-        - >-
           ../../layers/CMSSchema/packages/post-mutations:/app/vendor/pop-cms-schema/post-mutations
         - >-
           ../../layers/CMSSchema/packages/post-tag-mutations:/app/vendor/pop-cms-schema/post-tag-mutations
-        - >-
-          ../../layers/CMSSchema/packages/post-tag-mutations-wp:/app/vendor/pop-cms-schema/post-tag-mutations-wp
         - >-
           ../../layers/CMSSchema/packages/post-tags:/app/vendor/pop-cms-schema/post-tags
         - >-
@@ -235,6 +235,7 @@ services:
         - '../../layers/WPSchema/packages/pages:/app/vendor/pop-wp-schema/pages'
         - '../../layers/WPSchema/packages/posts:/app/vendor/pop-wp-schema/posts'
         - '../../layers/WPSchema/packages/schema-commons:/app/vendor/pop-wp-schema/schema-commons'
+        - '../../layers/WPSchema/packages/settings:/app/vendor/pop-wp-schema/settings'
         - '../../layers/WPSchema/packages/site:/app/vendor/pop-wp-schema/site'
         - '../../layers/WPSchema/packages/taxonomymeta:/app/vendor/pop-wp-schema/taxonomymeta'
         - '../../layers/WPSchema/packages/usermeta:/app/vendor/pop-wp-schema/usermeta'

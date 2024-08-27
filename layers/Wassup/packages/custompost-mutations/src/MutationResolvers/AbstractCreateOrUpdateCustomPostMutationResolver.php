@@ -362,19 +362,4 @@ abstract class AbstractCreateOrUpdateCustomPostMutationResolver extends Upstream
             Utils::updateCustomPostMeta($customPostID, GD_METAKEY_POST_REFERENCES, $fieldDataAccessor->getValue(MutationInputProperties::REFERENCES));
         }
     }
-
-    /**
-     * @return array<string,mixed>
-     */
-    protected function getUpdateCustomPostDataLog(int|string $customPostID, FieldDataAccessorInterface $fieldDataAccessor): array
-    {
-        $log = parent::getUpdateCustomPostDataLog($customPostID, $fieldDataAccessor);
-
-        if ($fieldDataAccessor->hasValue(MutationInputProperties::REFERENCES)) {
-            $previous_references = Utils::getCustomPostMeta($customPostID, GD_METAKEY_POST_REFERENCES);
-            $log['new-references'] = array_diff($fieldDataAccessor->getValue(MutationInputProperties::REFERENCES), $previous_references);
-        }
-
-        return $log;
-    }
 }
