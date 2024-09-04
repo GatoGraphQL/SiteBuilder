@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace EverythingElse\PoPCMSSchema\TagsWP\TypeAPIs;
 
 use PoPCMSSchema\SchemaCommons\Facades\CMS\CMSServiceFacade;
-use PoPCMSSchema\TagsWP\TypeAPIs\AbstractTagTypeAPI as UpstreamAbstractTagTypeAPI;
-use PoPCMSSchema\Tags\TypeAPIs\TagTypeAPIInterface;
+use PoPCMSSchema\TagsWP\TypeAPIs\AbstractTagTaxonomyTypeAPI as UpstreamAbstractTagTypeAPI;
+use PoPCMSSchema\Tags\TypeAPIs\TagTaxonomyTypeAPIInterface;
 
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
-abstract class AbstractTagTypeAPI extends UpstreamAbstractTagTypeAPI implements TagTypeAPIInterface
+abstract class AbstractTagTaxonomyTypeAPI extends UpstreamAbstractTagTypeAPI implements TagTaxonomyTypeAPIInterface
 {
     public function getTagBase(): string
     {
@@ -20,12 +20,4 @@ abstract class AbstractTagTypeAPI extends UpstreamAbstractTagTypeAPI implements 
     }
 
     abstract protected function getTagBaseOption(): string;
-
-    /**
-     * @param string[] $tags
-     */
-    public function setPostTags(string|int $customPostID, array $tags, bool $append = false): void
-    {
-        \wp_set_post_terms($customPostID, $tags, $this->getTagTaxonomyName(), $append);
-    }
 }

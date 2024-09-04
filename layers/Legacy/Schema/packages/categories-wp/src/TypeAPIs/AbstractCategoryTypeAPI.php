@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace EverythingElse\PoPCMSSchema\CategoriesWP\TypeAPIs;
 
-use EverythingElse\PoPCMSSchema\Categories\TypeAPIs\CategoryTypeAPIInterface;
-use PoPCMSSchema\CategoriesWP\TypeAPIs\AbstractCategoryTypeAPI as UpstreamAbstractCategoryTypeAPI;
+use EverythingElse\PoPCMSSchema\Categories\TypeAPIs\CategoryTaxonomyTypeAPIInterface;
+use PoPCMSSchema\CategoriesWP\TypeAPIs\AbstractCategoryTaxonomyTypeAPI as UpstreamAbstractCategoryTypeAPI;
 use PoPCMSSchema\SchemaCommons\CMS\CMSServiceInterface;
 
 use function wp_set_post_terms;
 
-abstract class AbstractCategoryTypeAPI extends UpstreamAbstractCategoryTypeAPI implements CategoryTypeAPIInterface
+abstract class AbstractCategoryTaxonomyTypeAPI extends UpstreamAbstractCategoryTypeAPI implements CategoryTaxonomyTypeAPIInterface
 {
     private ?CMSServiceInterface $cmsService = null;
 
@@ -47,14 +47,6 @@ abstract class AbstractCategoryTypeAPI extends UpstreamAbstractCategoryTypeAPI i
         $termlink = home_url(user_trailingslashit($termlink, $taxonomy));
 
         return substr($category_path, strlen($termlink));
-    }
-
-    /**
-     * @param mixed[] $categories
-     */
-    public function setPostCategories(string|int $post_id, array $categories, bool $append = false): void
-    {
-        wp_set_post_terms($post_id, $categories, $this->getCategoryTaxonomyName(), $append);
     }
 
     abstract protected function getCategoryBaseOption(): string;
