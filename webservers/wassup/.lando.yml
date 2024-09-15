@@ -301,6 +301,7 @@ services:
       - cp assets/.htaccess wordpress
       - wp rewrite structure '/%postname%/' --hard
       - wp option update uploads_use_yearmonth_folders '0'
+      - wp option update admin_email wordpress@example.com
 env_file:
   - defaults.env
   - defaults.local.env
