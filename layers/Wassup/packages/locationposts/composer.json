@@ -17,11 +17,11 @@
         "pop-cms-schema/posts": "^1.1"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^1.12",
         "phpunit/phpunit": "^10.2",
         "pop-cms-schema/tags": "^1.1",
         "pop-cms-schema/users": "^1.1",
-        "rector/rector": "^0.18",
+        "rector/rector": "^1.2",
         "squizlabs/php_codesniffer": "^3.6"
     },
     "suggest": {
