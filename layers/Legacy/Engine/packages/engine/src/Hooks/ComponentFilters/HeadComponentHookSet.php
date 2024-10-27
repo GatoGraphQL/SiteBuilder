@@ -15,10 +15,6 @@ class HeadComponentHookSet extends AbstractHookSet
     private ?HeadComponent $headComponent = null;
     private ?ComponentHelpersInterface $componentHelpers = null;
     
-    final public function setHeadComponent(HeadComponent $headComponent): void
-    {
-        $this->headComponent = $headComponent;
-    }
     final protected function getHeadComponent(): HeadComponent
     {
         if ($this->headComponent === null) {
@@ -27,10 +23,6 @@ class HeadComponentHookSet extends AbstractHookSet
             $this->headComponent = $headComponent;
         }
         return $this->headComponent;
-    }
-    final public function setComponentHelpers(ComponentHelpersInterface $componentHelpers): void
-    {
-        $this->componentHelpers = $componentHelpers;
     }
     final protected function getComponentHelpers(): ComponentHelpersInterface
     {

@@ -12,10 +12,6 @@ class LogoutUserMutationResolverBridge extends AbstractComponentMutationResolver
 {
     private ?LogoutUserMutationResolver $logoutUserMutationResolver = null;
 
-    final public function setLogoutUserMutationResolver(LogoutUserMutationResolver $logoutUserMutationResolver): void
-    {
-        $this->logoutUserMutationResolver = $logoutUserMutationResolver;
-    }
     final protected function getLogoutUserMutationResolver(): LogoutUserMutationResolver
     {
         if ($this->logoutUserMutationResolver === null) {

@@ -37,10 +37,6 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
     private ?StringScalarTypeResolver $stringScalarTypeResolver = null;
     private ?URLScalarTypeResolver $urlScalarTypeResolver = null;
     
-    final public function setBooleanScalarTypeResolver(BooleanScalarTypeResolver $booleanScalarTypeResolver): void
-    {
-        $this->booleanScalarTypeResolver = $booleanScalarTypeResolver;
-    }
     final protected function getBooleanScalarTypeResolver(): BooleanScalarTypeResolver
     {
         if ($this->booleanScalarTypeResolver === null) {
@@ -49,10 +45,6 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
             $this->booleanScalarTypeResolver = $booleanScalarTypeResolver;
         }
         return $this->booleanScalarTypeResolver;
-    }
-    final public function setIDScalarTypeResolver(IDScalarTypeResolver $idScalarTypeResolver): void
-    {
-        $this->idScalarTypeResolver = $idScalarTypeResolver;
     }
     final protected function getIDScalarTypeResolver(): IDScalarTypeResolver
     {
@@ -63,10 +55,6 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
         }
         return $this->idScalarTypeResolver;
     }
-    final public function setIntScalarTypeResolver(IntScalarTypeResolver $intScalarTypeResolver): void
-    {
-        $this->intScalarTypeResolver = $intScalarTypeResolver;
-    }
     final protected function getIntScalarTypeResolver(): IntScalarTypeResolver
     {
         if ($this->intScalarTypeResolver === null) {
@@ -76,10 +64,6 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
         }
         return $this->intScalarTypeResolver;
     }
-    final public function setStringScalarTypeResolver(StringScalarTypeResolver $stringScalarTypeResolver): void
-    {
-        $this->stringScalarTypeResolver = $stringScalarTypeResolver;
-    }
     final protected function getStringScalarTypeResolver(): StringScalarTypeResolver
     {
         if ($this->stringScalarTypeResolver === null) {
@@ -88,10 +72,6 @@ class CustomPostFunctionalObjectTypeFieldResolver extends AbstractObjectTypeFiel
             $this->stringScalarTypeResolver = $stringScalarTypeResolver;
         }
         return $this->stringScalarTypeResolver;
-    }
-    final public function setURLScalarTypeResolver(URLScalarTypeResolver $urlScalarTypeResolver): void
-    {
-        $this->urlScalarTypeResolver = $urlScalarTypeResolver;
     }
     final protected function getURLScalarTypeResolver(): URLScalarTypeResolver
     {

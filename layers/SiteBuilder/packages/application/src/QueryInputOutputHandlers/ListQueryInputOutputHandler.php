@@ -20,10 +20,6 @@ class ListQueryInputOutputHandler extends UpstreamListQueryInputOutputHandler
     private ?CMSServiceInterface $cmsService = null;
     private ?NameResolverInterface $nameResolver = null;
 
-    final public function setCMSService(CMSServiceInterface $cmsService): void
-    {
-        $this->cmsService = $cmsService;
-    }
     final protected function getCMSService(): CMSServiceInterface
     {
         if ($this->cmsService === null) {
@@ -32,10 +28,6 @@ class ListQueryInputOutputHandler extends UpstreamListQueryInputOutputHandler
             $this->cmsService = $cmsService;
         }
         return $this->cmsService;
-    }
-    final public function setNameResolver(NameResolverInterface $nameResolver): void
-    {
-        $this->nameResolver = $nameResolver;
     }
     final protected function getNameResolver(): NameResolverInterface
     {

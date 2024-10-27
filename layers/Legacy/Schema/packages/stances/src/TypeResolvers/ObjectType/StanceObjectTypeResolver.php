@@ -13,10 +13,6 @@ class StanceObjectTypeResolver extends AbstractObjectTypeResolver
 {
     private ?StanceObjectTypeDataLoader $stanceObjectTypeDataLoader = null;
     
-    final public function setStanceObjectTypeDataLoader(StanceObjectTypeDataLoader $stanceObjectTypeDataLoader): void
-    {
-        $this->stanceObjectTypeDataLoader = $stanceObjectTypeDataLoader;
-    }
     final protected function getStanceObjectTypeDataLoader(): StanceObjectTypeDataLoader
     {
         if ($this->stanceObjectTypeDataLoader === null) {

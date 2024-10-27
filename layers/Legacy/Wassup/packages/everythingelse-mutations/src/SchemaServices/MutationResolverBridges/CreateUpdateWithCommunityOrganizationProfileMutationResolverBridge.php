@@ -15,10 +15,6 @@ class CreateUpdateWithCommunityOrganizationProfileMutationResolverBridge extends
 {
     private ?CreateUpdateWithCommunityOrganizationProfileMutationResolver $createUpdateWithCommunityOrganizationProfileMutationResolver = null;
     
-    final public function setCreateUpdateWithCommunityOrganizationProfileMutationResolver(CreateUpdateWithCommunityOrganizationProfileMutationResolver $createUpdateWithCommunityOrganizationProfileMutationResolver): void
-    {
-        $this->createUpdateWithCommunityOrganizationProfileMutationResolver = $createUpdateWithCommunityOrganizationProfileMutationResolver;
-    }
     final protected function getCreateUpdateWithCommunityOrganizationProfileMutationResolver(): CreateUpdateWithCommunityOrganizationProfileMutationResolver
     {
         if ($this->createUpdateWithCommunityOrganizationProfileMutationResolver === null) {

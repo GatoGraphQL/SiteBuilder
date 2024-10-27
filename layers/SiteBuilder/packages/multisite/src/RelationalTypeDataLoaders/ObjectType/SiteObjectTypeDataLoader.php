@@ -12,10 +12,6 @@ class SiteObjectTypeDataLoader extends AbstractObjectTypeDataLoader
 {
     private ?Site $site = null;
 
-    final public function setSite(Site $site): void
-    {
-        $this->site = $site;
-    }
     final protected function getSite(): Site
     {
         if ($this->site === null) {

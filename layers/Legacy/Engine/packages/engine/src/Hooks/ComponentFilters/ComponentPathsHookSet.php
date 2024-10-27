@@ -14,10 +14,6 @@ class ComponentPathsHookSet extends AbstractHookSet
 {
     private ?ComponentPaths $componentPaths = null;
     
-    final public function setComponentPaths(ComponentPaths $componentPaths): void
-    {
-        $this->componentPaths = $componentPaths;
-    }
     final protected function getComponentPaths(): ComponentPaths
     {
         if ($this->componentPaths === null) {

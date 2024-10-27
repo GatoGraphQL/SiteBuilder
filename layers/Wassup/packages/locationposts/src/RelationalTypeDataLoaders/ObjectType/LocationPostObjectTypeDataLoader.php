@@ -11,10 +11,6 @@ class LocationPostObjectTypeDataLoader extends PostObjectTypeDataLoader
 {
     private ?LocationPostTypeAPIInterface $locationPostTypeAPI = null;
 
-    final public function setLocationPostTypeAPI(LocationPostTypeAPIInterface $locationPostTypeAPI): void
-    {
-        $this->locationPostTypeAPI = $locationPostTypeAPI;
-    }
     final protected function getLocationPostTypeAPI(): LocationPostTypeAPIInterface
     {
         if ($this->locationPostTypeAPI === null) {

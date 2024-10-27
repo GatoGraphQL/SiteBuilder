@@ -19,10 +19,6 @@ class CreateUpdateProfileMutationResolverBridge extends AbstractComponentMutatio
 {
     private ?CreateUpdateProfileMutationResolver $createUpdateProfileMutationResolver = null;
     
-    final public function setCreateUpdateProfileMutationResolver(CreateUpdateProfileMutationResolver $createUpdateProfileMutationResolver): void
-    {
-        $this->createUpdateProfileMutationResolver = $createUpdateProfileMutationResolver;
-    }
     final protected function getCreateUpdateProfileMutationResolver(): CreateUpdateProfileMutationResolver
     {
         if ($this->createUpdateProfileMutationResolver === null) {

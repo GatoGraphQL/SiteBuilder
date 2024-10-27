@@ -25,10 +25,6 @@ class AppStateProvider extends AbstractAppStateProvider
     private ?ComponentPathHelpersInterface $componentPathHelpers = null;
     private ?ComponentHelpersInterface $componentHelpers = null;
 
-    final public function setHeadComponent(HeadComponent $headComponent): void
-    {
-        $this->headComponent = $headComponent;
-    }
     final protected function getHeadComponent(): HeadComponent
     {
         if ($this->headComponent === null) {
@@ -38,10 +34,6 @@ class AppStateProvider extends AbstractAppStateProvider
         }
         return $this->headComponent;
     }    
-    final public function setComponentPaths(ComponentPaths $componentPaths): void
-    {
-        $this->componentPaths = $componentPaths;
-    }
     final protected function getComponentPaths(): ComponentPaths
     {
         if ($this->componentPaths === null) {
@@ -50,10 +42,6 @@ class AppStateProvider extends AbstractAppStateProvider
             $this->componentPaths = $componentPaths;
         }
         return $this->componentPaths;
-    }
-    final public function setMainContentComponent(MainContentComponent $mainContentComponent): void
-    {
-        $this->mainContentComponent = $mainContentComponent;
     }
     final protected function getMainContentComponent(): MainContentComponent
     {
@@ -64,10 +52,6 @@ class AppStateProvider extends AbstractAppStateProvider
         }
         return $this->mainContentComponent;
     }
-    final public function setComponentRoutingProcessorManager(ComponentRoutingProcessorManagerInterface $routeComponentProcessorManager): void
-    {
-        $this->routeComponentProcessorManager = $routeComponentProcessorManager;
-    }
     final protected function getComponentRoutingProcessorManager(): ComponentRoutingProcessorManagerInterface
     {
         if ($this->routeComponentProcessorManager === null) {
@@ -77,10 +61,6 @@ class AppStateProvider extends AbstractAppStateProvider
         }
         return $this->routeComponentProcessorManager;
     }
-    final public function setComponentPathHelpers(ComponentPathHelpersInterface $componentPathHelpers): void
-    {
-        $this->componentPathHelpers = $componentPathHelpers;
-    }
     final protected function getComponentPathHelpers(): ComponentPathHelpersInterface
     {
         if ($this->componentPathHelpers === null) {
@@ -89,10 +69,6 @@ class AppStateProvider extends AbstractAppStateProvider
             $this->componentPathHelpers = $componentPathHelpers;
         }
         return $this->componentPathHelpers;
-    }
-    final public function setComponentHelpers(ComponentHelpersInterface $componentHelpers): void
-    {
-        $this->componentHelpers = $componentHelpers;
     }
     final protected function getComponentHelpers(): ComponentHelpersInterface
     {

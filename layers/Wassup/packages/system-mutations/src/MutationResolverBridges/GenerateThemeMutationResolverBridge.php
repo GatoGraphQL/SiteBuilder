@@ -11,10 +11,6 @@ class GenerateThemeMutationResolverBridge extends AbstractSystemComponentMutatio
 {
     private ?GenerateThemeMutationResolver $generateThemeMutationResolver = null;
 
-    final public function setGenerateThemeMutationResolver(GenerateThemeMutationResolver $generateThemeMutationResolver): void
-    {
-        $this->generateThemeMutationResolver = $generateThemeMutationResolver;
-    }
     final protected function getGenerateThemeMutationResolver(): GenerateThemeMutationResolver
     {
         if ($this->generateThemeMutationResolver === null) {

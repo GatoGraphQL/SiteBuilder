@@ -23,10 +23,6 @@ class LostPasswordMutationResolver extends AbstractMutationResolver
     private ?UserTypeAPIInterface $userTypeAPI = null;
     private ?CMSServiceInterface $cmsService = null;
 
-    final public function setUserTypeAPI(UserTypeAPIInterface $userTypeAPI): void
-    {
-        $this->userTypeAPI = $userTypeAPI;
-    }
     final protected function getUserTypeAPI(): UserTypeAPIInterface
     {
         if ($this->userTypeAPI === null) {
@@ -35,10 +31,6 @@ class LostPasswordMutationResolver extends AbstractMutationResolver
             $this->userTypeAPI = $userTypeAPI;
         }
         return $this->userTypeAPI;
-    }
-    final public function setCMSService(CMSServiceInterface $cmsService): void
-    {
-        $this->cmsService = $cmsService;
     }
     final protected function getCMSService(): CMSServiceInterface
     {

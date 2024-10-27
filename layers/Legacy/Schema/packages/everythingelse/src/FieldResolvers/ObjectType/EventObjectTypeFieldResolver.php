@@ -25,10 +25,6 @@ class EventObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
     private ?JSONObjectScalarTypeResolver $jsonObjectScalarTypeResolver = null;
     private ?LocationObjectTypeResolver $locationObjectTypeResolver = null;
     
-    final public function setStringScalarTypeResolver(StringScalarTypeResolver $stringScalarTypeResolver): void
-    {
-        $this->stringScalarTypeResolver = $stringScalarTypeResolver;
-    }
     final protected function getStringScalarTypeResolver(): StringScalarTypeResolver
     {
         if ($this->stringScalarTypeResolver === null) {
@@ -38,10 +34,6 @@ class EventObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
         }
         return $this->stringScalarTypeResolver;
     }
-    final public function setJSONObjectScalarTypeResolver(JSONObjectScalarTypeResolver $jsonObjectScalarTypeResolver): void
-    {
-        $this->jsonObjectScalarTypeResolver = $jsonObjectScalarTypeResolver;
-    }
     final protected function getJSONObjectScalarTypeResolver(): JSONObjectScalarTypeResolver
     {
         if ($this->jsonObjectScalarTypeResolver === null) {
@@ -50,10 +42,6 @@ class EventObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             $this->jsonObjectScalarTypeResolver = $jsonObjectScalarTypeResolver;
         }
         return $this->jsonObjectScalarTypeResolver;
-    }
-    final public function setLocationObjectTypeResolver(LocationObjectTypeResolver $locationObjectTypeResolver): void
-    {
-        $this->locationObjectTypeResolver = $locationObjectTypeResolver;
     }
     final protected function getLocationObjectTypeResolver(): LocationObjectTypeResolver
     {

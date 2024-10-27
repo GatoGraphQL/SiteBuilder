@@ -11,10 +11,6 @@ class CreateEventMutationResolverBridge extends AbstractCreateUpdateEventMutatio
 {
     private ?CreateEventMutationResolver $createEventMutationResolver = null;
 
-    final public function setCreateEventMutationResolver(CreateEventMutationResolver $createEventMutationResolver): void
-    {
-        $this->createEventMutationResolver = $createEventMutationResolver;
-    }
     final protected function getCreateEventMutationResolver(): CreateEventMutationResolver
     {
         if ($this->createEventMutationResolver === null) {

@@ -23,10 +23,6 @@ use SplObjectStorage;
 
 abstract class AbstractComponentProcessor extends UpstreamAbstractComponentProcessor implements ComponentProcessorInterface
 {
-    final public function setTypeResolverHelperService(TypeResolverHelperServiceInterface $typeResolverHelperService): void
-    {
-        $this->typeResolverHelperService = $typeResolverHelperService;
-    }
     final protected function getTypeResolverHelperService(): TypeResolverHelperServiceInterface
     {
         if ($this->typeResolverHelperService === null) {

@@ -13,10 +13,6 @@ class NewsletterSubscriptionMutationResolverBridge extends AbstractFormComponent
 {
     private ?NewsletterSubscriptionMutationResolver $newsletterSubscriptionMutationResolver = null;
 
-    final public function setNewsletterSubscriptionMutationResolver(NewsletterSubscriptionMutationResolver $newsletterSubscriptionMutationResolver): void
-    {
-        $this->newsletterSubscriptionMutationResolver = $newsletterSubscriptionMutationResolver;
-    }
     final protected function getNewsletterSubscriptionMutationResolver(): NewsletterSubscriptionMutationResolver
     {
         if ($this->newsletterSubscriptionMutationResolver === null) {

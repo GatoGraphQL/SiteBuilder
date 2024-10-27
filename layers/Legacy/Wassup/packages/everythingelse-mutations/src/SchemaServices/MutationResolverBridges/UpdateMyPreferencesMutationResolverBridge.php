@@ -19,10 +19,6 @@ class UpdateMyPreferencesMutationResolverBridge extends AbstractComponentMutatio
 {
     private ?UpdateMyPreferencesMutationResolver $updateMyPreferencesMutationResolver = null;
     
-    final public function setUpdateMyPreferencesMutationResolver(UpdateMyPreferencesMutationResolver $updateMyPreferencesMutationResolver): void
-    {
-        $this->updateMyPreferencesMutationResolver = $updateMyPreferencesMutationResolver;
-    }
     final protected function getUpdateMyPreferencesMutationResolver(): UpdateMyPreferencesMutationResolver
     {
         if ($this->updateMyPreferencesMutationResolver === null) {

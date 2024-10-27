@@ -16,10 +16,6 @@ abstract class AbstractCreateUpdateEventMutationResolver extends AbstractCreateO
     private ?EventTypeAPIInterface $eventTypeAPI = null;
     private ?EventTypeMutationAPIInterface $eventTypeMutationAPI = null;
 
-    final public function setEventTypeAPI(EventTypeAPIInterface $eventTypeAPI): void
-    {
-        $this->eventTypeAPI = $eventTypeAPI;
-    }
     final protected function getEventTypeAPI(): EventTypeAPIInterface
     {
         if ($this->eventTypeAPI === null) {
@@ -28,10 +24,6 @@ abstract class AbstractCreateUpdateEventMutationResolver extends AbstractCreateO
             $this->eventTypeAPI = $eventTypeAPI;
         }
         return $this->eventTypeAPI;
-    }
-    final public function setEventTypeMutationAPI(EventTypeMutationAPIInterface $eventTypeMutationAPI): void
-    {
-        $this->eventTypeMutationAPI = $eventTypeMutationAPI;
     }
     final protected function getEventTypeMutationAPI(): EventTypeMutationAPIInterface
     {

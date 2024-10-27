@@ -17,10 +17,6 @@ class UpdateUserAvatarMutationResolverBridge extends AbstractComponentMutationRe
 {
     private ?UpdateUserAvatarMutationResolver $updateUserAvatarMutationResolver = null;
     
-    final public function setUpdateUserAvatarMutationResolver(UpdateUserAvatarMutationResolver $updateUserAvatarMutationResolver): void
-    {
-        $this->updateUserAvatarMutationResolver = $updateUserAvatarMutationResolver;
-    }
     final protected function getUpdateUserAvatarMutationResolver(): UpdateUserAvatarMutationResolver
     {
         if ($this->updateUserAvatarMutationResolver === null) {

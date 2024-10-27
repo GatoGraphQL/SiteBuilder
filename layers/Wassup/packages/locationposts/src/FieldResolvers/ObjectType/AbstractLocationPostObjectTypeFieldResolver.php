@@ -23,10 +23,6 @@ abstract class AbstractLocationPostObjectTypeFieldResolver extends AbstractQuery
     private ?LocationPostObjectTypeResolver $locationPostObjectTypeResolver = null;
     private ?LocationPostTypeAPIInterface $locationPostTypeAPI = null;
 
-    final public function setLocationPostObjectTypeResolver(LocationPostObjectTypeResolver $locationPostObjectTypeResolver): void
-    {
-        $this->locationPostObjectTypeResolver = $locationPostObjectTypeResolver;
-    }
     final protected function getLocationPostObjectTypeResolver(): LocationPostObjectTypeResolver
     {
         if ($this->locationPostObjectTypeResolver === null) {
@@ -35,10 +31,6 @@ abstract class AbstractLocationPostObjectTypeFieldResolver extends AbstractQuery
             $this->locationPostObjectTypeResolver = $locationPostObjectTypeResolver;
         }
         return $this->locationPostObjectTypeResolver;
-    }
-    final public function setLocationPostTypeAPI(LocationPostTypeAPIInterface $locationPostTypeAPI): void
-    {
-        $this->locationPostTypeAPI = $locationPostTypeAPI;
     }
     final protected function getLocationPostTypeAPI(): LocationPostTypeAPIInterface
     {

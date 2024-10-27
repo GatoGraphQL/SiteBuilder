@@ -14,10 +14,6 @@ class LoginUserByCredentialsMutationResolverBridge extends AbstractComponentMuta
 {
     private ?LoginUserByCredentialsMutationResolver $loginUserByCredentialsMutationResolver = null;
 
-    final public function setLoginUserByCredentialsMutationResolver(LoginUserByCredentialsMutationResolver $loginUserByCredentialsMutationResolver): void
-    {
-        $this->loginUserByCredentialsMutationResolver = $loginUserByCredentialsMutationResolver;
-    }
     final protected function getLoginUserByCredentialsMutationResolver(): LoginUserByCredentialsMutationResolver
     {
         if ($this->loginUserByCredentialsMutationResolver === null) {

@@ -15,10 +15,6 @@ class CreateOrUpdateStanceMutationResolverBridge extends AbstractCreateUpdateSta
 {
     private ?CreateOrUpdateStanceMutationResolver $createOrUpdateStanceMutationResolver = null;
 
-    final public function setCreateOrUpdateStanceMutationResolver(CreateOrUpdateStanceMutationResolver $createOrUpdateStanceMutationResolver): void
-    {
-        $this->createOrUpdateStanceMutationResolver = $createOrUpdateStanceMutationResolver;
-    }
     final protected function getCreateOrUpdateStanceMutationResolver(): CreateOrUpdateStanceMutationResolver
     {
         if ($this->createOrUpdateStanceMutationResolver === null) {

@@ -11,10 +11,6 @@ class UpdateHighlightMutationResolverBridge extends AbstractCreateUpdateHighligh
 {
     private ?UpdateHighlightMutationResolver $updateHighlightMutationResolver = null;
 
-    final public function setUpdateHighlightMutationResolver(UpdateHighlightMutationResolver $updateHighlightMutationResolver): void
-    {
-        $this->updateHighlightMutationResolver = $updateHighlightMutationResolver;
-    }
     final protected function getUpdateHighlightMutationResolver(): UpdateHighlightMutationResolver
     {
         if ($this->updateHighlightMutationResolver === null) {

@@ -22,10 +22,6 @@ class CreateUpdateUserMutationResolverBridge extends AbstractComponentMutationRe
 {
     private ?CreateUpdateUserMutationResolver $createUpdateUserMutationResolver = null;
     
-    final public function setCreateUpdateUserMutationResolver(CreateUpdateUserMutationResolver $createUpdateUserMutationResolver): void
-    {
-        $this->createUpdateUserMutationResolver = $createUpdateUserMutationResolver;
-    }
     final protected function getCreateUpdateUserMutationResolver(): CreateUpdateUserMutationResolver
     {
         if ($this->createUpdateUserMutationResolver === null) {

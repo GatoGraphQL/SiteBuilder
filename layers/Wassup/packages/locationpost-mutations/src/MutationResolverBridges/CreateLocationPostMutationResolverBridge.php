@@ -11,10 +11,6 @@ class CreateLocationPostMutationResolverBridge extends AbstractCreateUpdateLocat
 {
     private ?CreateLocationPostMutationResolver $createLocationPostMutationResolver = null;
 
-    final public function setCreateLocationPostMutationResolver(CreateLocationPostMutationResolver $createLocationPostMutationResolver): void
-    {
-        $this->createLocationPostMutationResolver = $createLocationPostMutationResolver;
-    }
     final protected function getCreateLocationPostMutationResolver(): CreateLocationPostMutationResolver
     {
         if ($this->createLocationPostMutationResolver === null) {

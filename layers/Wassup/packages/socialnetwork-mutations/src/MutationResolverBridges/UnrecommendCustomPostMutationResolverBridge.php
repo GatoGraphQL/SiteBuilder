@@ -11,10 +11,6 @@ class UnrecommendCustomPostMutationResolverBridge extends AbstractCustomPostUpda
 {
     private ?UnrecommendCustomPostMutationResolver $unrecommendCustomPostMutationResolver = null;
 
-    final public function setUnrecommendCustomPostMutationResolver(UnrecommendCustomPostMutationResolver $unrecommendCustomPostMutationResolver): void
-    {
-        $this->unrecommendCustomPostMutationResolver = $unrecommendCustomPostMutationResolver;
-    }
     final protected function getUnrecommendCustomPostMutationResolver(): UnrecommendCustomPostMutationResolver
     {
         if ($this->unrecommendCustomPostMutationResolver === null) {

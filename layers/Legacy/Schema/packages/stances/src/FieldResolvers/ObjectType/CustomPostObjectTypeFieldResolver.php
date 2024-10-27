@@ -28,10 +28,6 @@ class CustomPostObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
     private ?IntScalarTypeResolver $intScalarTypeResolver = null;
     private ?StanceObjectTypeResolver $stanceObjectTypeResolver = null;
     
-    final public function setBooleanScalarTypeResolver(BooleanScalarTypeResolver $booleanScalarTypeResolver): void
-    {
-        $this->booleanScalarTypeResolver = $booleanScalarTypeResolver;
-    }
     final protected function getBooleanScalarTypeResolver(): BooleanScalarTypeResolver
     {
         if ($this->booleanScalarTypeResolver === null) {
@@ -41,10 +37,6 @@ class CustomPostObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
         }
         return $this->booleanScalarTypeResolver;
     }
-    final public function setIntScalarTypeResolver(IntScalarTypeResolver $intScalarTypeResolver): void
-    {
-        $this->intScalarTypeResolver = $intScalarTypeResolver;
-    }
     final protected function getIntScalarTypeResolver(): IntScalarTypeResolver
     {
         if ($this->intScalarTypeResolver === null) {
@@ -53,10 +45,6 @@ class CustomPostObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             $this->intScalarTypeResolver = $intScalarTypeResolver;
         }
         return $this->intScalarTypeResolver;
-    }
-    final public function setStanceObjectTypeResolver(StanceObjectTypeResolver $stanceObjectTypeResolver): void
-    {
-        $this->stanceObjectTypeResolver = $stanceObjectTypeResolver;
     }
     final protected function getStanceObjectTypeResolver(): StanceObjectTypeResolver
     {

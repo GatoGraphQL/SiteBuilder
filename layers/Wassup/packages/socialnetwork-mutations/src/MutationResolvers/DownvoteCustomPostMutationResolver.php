@@ -14,10 +14,6 @@ class DownvoteCustomPostMutationResolver extends AbstractDownvoteOrUndoDownvoteC
 {
     private ?UpvoteCustomPostMutationResolver $upvoteCustomPostMutationResolver = null;
 
-    final public function setUpvoteCustomPostMutationResolver(UpvoteCustomPostMutationResolver $upvoteCustomPostMutationResolver): void
-    {
-        $this->upvoteCustomPostMutationResolver = $upvoteCustomPostMutationResolver;
-    }
     final protected function getUpvoteCustomPostMutationResolver(): UpvoteCustomPostMutationResolver
     {
         if ($this->upvoteCustomPostMutationResolver === null) {

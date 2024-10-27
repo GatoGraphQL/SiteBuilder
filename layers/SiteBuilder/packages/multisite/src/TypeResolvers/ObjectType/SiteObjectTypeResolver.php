@@ -13,10 +13,6 @@ class SiteObjectTypeResolver extends AbstractObjectTypeResolver
 {
     private ?SiteObjectTypeDataLoader $siteObjectTypeDataLoader = null;
 
-    final public function setSiteObjectTypeDataLoader(SiteObjectTypeDataLoader $siteObjectTypeDataLoader): void
-    {
-        $this->siteObjectTypeDataLoader = $siteObjectTypeDataLoader;
-    }
     final protected function getSiteObjectTypeDataLoader(): SiteObjectTypeDataLoader
     {
         if ($this->siteObjectTypeDataLoader === null) {

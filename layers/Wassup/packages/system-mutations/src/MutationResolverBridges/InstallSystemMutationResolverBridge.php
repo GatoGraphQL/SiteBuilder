@@ -11,10 +11,6 @@ class InstallSystemMutationResolverBridge extends AbstractSystemComponentMutatio
 {
     private ?InstallSystemMutationResolver $installSystemMutationResolver = null;
 
-    final public function setInstallSystemMutationResolver(InstallSystemMutationResolver $installSystemMutationResolver): void
-    {
-        $this->installSystemMutationResolver = $installSystemMutationResolver;
-    }
     final protected function getInstallSystemMutationResolver(): InstallSystemMutationResolver
     {
         if ($this->installSystemMutationResolver === null) {

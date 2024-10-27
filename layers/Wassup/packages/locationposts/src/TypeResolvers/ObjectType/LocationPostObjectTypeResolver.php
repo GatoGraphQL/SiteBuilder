@@ -15,10 +15,6 @@ class LocationPostObjectTypeResolver extends PostObjectTypeResolver
 
     private ?LocationPostObjectTypeDataLoader $locationPostObjectTypeDataLoader = null;
 
-    final public function setLocationPostObjectTypeDataLoader(LocationPostObjectTypeDataLoader $locationPostObjectTypeDataLoader): void
-    {
-        $this->locationPostObjectTypeDataLoader = $locationPostObjectTypeDataLoader;
-    }
     final protected function getLocationPostObjectTypeDataLoader(): LocationPostObjectTypeDataLoader
     {
         if ($this->locationPostObjectTypeDataLoader === null) {

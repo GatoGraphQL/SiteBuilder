@@ -19,10 +19,6 @@ class CustomPostObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
 {
     private ?LocationObjectTypeResolver $locationObjectTypeResolver = null;
     
-    final public function setLocationObjectTypeResolver(LocationObjectTypeResolver $locationObjectTypeResolver): void
-    {
-        $this->locationObjectTypeResolver = $locationObjectTypeResolver;
-    }
     final protected function getLocationObjectTypeResolver(): LocationObjectTypeResolver
     {
         if ($this->locationObjectTypeResolver === null) {

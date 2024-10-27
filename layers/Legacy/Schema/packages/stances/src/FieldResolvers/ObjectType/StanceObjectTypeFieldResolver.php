@@ -29,10 +29,6 @@ class StanceObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
     private ?IntScalarTypeResolver $intScalarTypeResolver = null;
     private ?BooleanScalarTypeResolver $booleanScalarTypeResolver = null;
     
-    final public function setIDScalarTypeResolver(IDScalarTypeResolver $idScalarTypeResolver): void
-    {
-        $this->idScalarTypeResolver = $idScalarTypeResolver;
-    }
     final protected function getIDScalarTypeResolver(): IDScalarTypeResolver
     {
         if ($this->idScalarTypeResolver === null) {
@@ -41,10 +37,6 @@ class StanceObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             $this->idScalarTypeResolver = $idScalarTypeResolver;
         }
         return $this->idScalarTypeResolver;
-    }
-    final public function setStringScalarTypeResolver(StringScalarTypeResolver $stringScalarTypeResolver): void
-    {
-        $this->stringScalarTypeResolver = $stringScalarTypeResolver;
     }
     final protected function getStringScalarTypeResolver(): StringScalarTypeResolver
     {
@@ -55,10 +47,6 @@ class StanceObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
         }
         return $this->stringScalarTypeResolver;
     }
-    final public function setIntScalarTypeResolver(IntScalarTypeResolver $intScalarTypeResolver): void
-    {
-        $this->intScalarTypeResolver = $intScalarTypeResolver;
-    }
     final protected function getIntScalarTypeResolver(): IntScalarTypeResolver
     {
         if ($this->intScalarTypeResolver === null) {
@@ -67,10 +55,6 @@ class StanceObjectTypeFieldResolver extends AbstractObjectTypeFieldResolver
             $this->intScalarTypeResolver = $intScalarTypeResolver;
         }
         return $this->intScalarTypeResolver;
-    }
-    final public function setBooleanScalarTypeResolver(BooleanScalarTypeResolver $booleanScalarTypeResolver): void
-    {
-        $this->booleanScalarTypeResolver = $booleanScalarTypeResolver;
     }
     final protected function getBooleanScalarTypeResolver(): BooleanScalarTypeResolver
     {

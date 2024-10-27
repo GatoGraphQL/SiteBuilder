@@ -19,10 +19,6 @@ abstract class AbstractCustomPostObjectTypeFieldResolver extends AbstractObjectT
 {
     private ?CustomPostInterfaceTypeFieldResolver $customPostInterfaceTypeFieldResolver = null;
     
-    final public function setCustomPostInterfaceTypeFieldResolver(CustomPostInterfaceTypeFieldResolver $customPostInterfaceTypeFieldResolver): void
-    {
-        $this->customPostInterfaceTypeFieldResolver = $customPostInterfaceTypeFieldResolver;
-    }
     final protected function getCustomPostInterfaceTypeFieldResolver(): CustomPostInterfaceTypeFieldResolver
     {
         if ($this->customPostInterfaceTypeFieldResolver === null) {

@@ -17,10 +17,6 @@ class ActivatePluginsMutationResolver extends AbstractMutationResolver
     private ?CMSServiceInterface $cmsService = null;
     private ?ApplicationInfoInterface $applicationInfo = null;
 
-    final public function setCMSService(CMSServiceInterface $cmsService): void
-    {
-        $this->cmsService = $cmsService;
-    }
     final protected function getCMSService(): CMSServiceInterface
     {
         if ($this->cmsService === null) {
@@ -29,10 +25,6 @@ class ActivatePluginsMutationResolver extends AbstractMutationResolver
             $this->cmsService = $cmsService;
         }
         return $this->cmsService;
-    }
-    final public function setApplicationInfo(ApplicationInfoInterface $applicationInfo): void
-    {
-        $this->applicationInfo = $applicationInfo;
     }
     final protected function getApplicationInfo(): ApplicationInfoInterface
     {

@@ -16,10 +16,6 @@ class VolunteerMutationResolverBridge extends AbstractFormComponentMutationResol
 {
     private ?VolunteerMutationResolver $volunteerMutationResolver = null;
 
-    final public function setVolunteerMutationResolver(VolunteerMutationResolver $volunteerMutationResolver): void
-    {
-        $this->volunteerMutationResolver = $volunteerMutationResolver;
-    }
     final protected function getVolunteerMutationResolver(): VolunteerMutationResolver
     {
         if ($this->volunteerMutationResolver === null) {

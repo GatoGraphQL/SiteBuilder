@@ -11,10 +11,6 @@ class UpdateEventMutationResolverBridge extends AbstractCreateUpdateEventMutatio
 {
     private ?UpdateEventMutationResolver $updateEventMutationResolver = null;
 
-    final public function setUpdateEventMutationResolver(UpdateEventMutationResolver $updateEventMutationResolver): void
-    {
-        $this->updateEventMutationResolver = $updateEventMutationResolver;
-    }
     final protected function getUpdateEventMutationResolver(): UpdateEventMutationResolver
     {
         if ($this->updateEventMutationResolver === null) {

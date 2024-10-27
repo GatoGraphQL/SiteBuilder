@@ -12,10 +12,6 @@ class NotificationObjectTypeResolver extends AbstractObjectTypeResolver
 {
     private ?NotificationObjectTypeDataLoader $notificationObjectTypeDataLoader = null;
     
-    final public function setNotificationObjectTypeDataLoader(NotificationObjectTypeDataLoader $notificationObjectTypeDataLoader): void
-    {
-        $this->notificationObjectTypeDataLoader = $notificationObjectTypeDataLoader;
-    }
     final protected function getNotificationObjectTypeDataLoader(): NotificationObjectTypeDataLoader
     {
         if ($this->notificationObjectTypeDataLoader === null) {

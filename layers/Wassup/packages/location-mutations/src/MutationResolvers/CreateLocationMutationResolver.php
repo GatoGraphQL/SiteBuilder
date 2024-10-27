@@ -16,10 +16,6 @@ class CreateLocationMutationResolver extends AbstractMutationResolver
 {
     private ?LocationTypeAPIInterface $locationTypeAPI = null;
 
-    final public function setLocationTypeAPI(LocationTypeAPIInterface $locationTypeAPI): void
-    {
-        $this->locationTypeAPI = $locationTypeAPI;
-    }
     final protected function getLocationTypeAPI(): LocationTypeAPIInterface
     {
         if ($this->locationTypeAPI === null) {

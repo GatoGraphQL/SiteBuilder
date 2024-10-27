@@ -16,10 +16,6 @@ class CustomPostInterfaceTypeFieldResolver extends QueryableInterfaceTypeFieldRe
     private ?DateScalarTypeResolver $dateScalarTypeResolver = null;
     private ?QueryableInterfaceTypeFieldResolver $queryableInterfaceTypeFieldResolver = null;
     
-    final public function setDateScalarTypeResolver(DateScalarTypeResolver $dateScalarTypeResolver): void
-    {
-        $this->dateScalarTypeResolver = $dateScalarTypeResolver;
-    }
     final protected function getDateScalarTypeResolver(): DateScalarTypeResolver
     {
         if ($this->dateScalarTypeResolver === null) {
@@ -28,10 +24,6 @@ class CustomPostInterfaceTypeFieldResolver extends QueryableInterfaceTypeFieldRe
             $this->dateScalarTypeResolver = $dateScalarTypeResolver;
         }
         return $this->dateScalarTypeResolver;
-    }
-    final public function setQueryableInterfaceTypeFieldResolver(QueryableInterfaceTypeFieldResolver $queryableInterfaceTypeFieldResolver): void
-    {
-        $this->queryableInterfaceTypeFieldResolver = $queryableInterfaceTypeFieldResolver;
     }
     final protected function getQueryableInterfaceTypeFieldResolver(): QueryableInterfaceTypeFieldResolver
     {

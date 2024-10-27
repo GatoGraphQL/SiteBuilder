@@ -37,10 +37,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
     private ?URLScalarTypeResolver $urlScalarTypeResolver = null;
     private ?UserObjectTypeResolver $userObjectTypeResolver = null;
     
-    final public function setCommentTypeAPI(CommentTypeAPIInterface $commentTypeAPI): void
-    {
-        $this->commentTypeAPI = $commentTypeAPI;
-    }
     final protected function getCommentTypeAPI(): CommentTypeAPIInterface
     {
         if ($this->commentTypeAPI === null) {
@@ -49,10 +45,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
             $this->commentTypeAPI = $commentTypeAPI;
         }
         return $this->commentTypeAPI;
-    }
-    final public function setBooleanScalarTypeResolver(BooleanScalarTypeResolver $booleanScalarTypeResolver): void
-    {
-        $this->booleanScalarTypeResolver = $booleanScalarTypeResolver;
     }
     final protected function getBooleanScalarTypeResolver(): BooleanScalarTypeResolver
     {
@@ -63,10 +55,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
         }
         return $this->booleanScalarTypeResolver;
     }
-    final public function setDateScalarTypeResolver(DateScalarTypeResolver $dateScalarTypeResolver): void
-    {
-        $this->dateScalarTypeResolver = $dateScalarTypeResolver;
-    }
     final protected function getDateScalarTypeResolver(): DateScalarTypeResolver
     {
         if ($this->dateScalarTypeResolver === null) {
@@ -75,10 +63,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
             $this->dateScalarTypeResolver = $dateScalarTypeResolver;
         }
         return $this->dateScalarTypeResolver;
-    }
-    final public function setIDScalarTypeResolver(IDScalarTypeResolver $idScalarTypeResolver): void
-    {
-        $this->idScalarTypeResolver = $idScalarTypeResolver;
     }
     final protected function getIDScalarTypeResolver(): IDScalarTypeResolver
     {
@@ -89,10 +73,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
         }
         return $this->idScalarTypeResolver;
     }
-    final public function setIPScalarTypeResolver(IPScalarTypeResolver $ipScalarTypeResolver): void
-    {
-        $this->ipScalarTypeResolver = $ipScalarTypeResolver;
-    }
     final protected function getIPScalarTypeResolver(): IPScalarTypeResolver
     {
         if ($this->ipScalarTypeResolver === null) {
@@ -101,10 +81,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
             $this->ipScalarTypeResolver = $ipScalarTypeResolver;
         }
         return $this->ipScalarTypeResolver;
-    }
-    final public function setStringScalarTypeResolver(StringScalarTypeResolver $stringScalarTypeResolver): void
-    {
-        $this->stringScalarTypeResolver = $stringScalarTypeResolver;
     }
     final protected function getStringScalarTypeResolver(): StringScalarTypeResolver
     {
@@ -115,10 +91,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
         }
         return $this->stringScalarTypeResolver;
     }
-    final public function setURLScalarTypeResolver(URLScalarTypeResolver $urlScalarTypeResolver): void
-    {
-        $this->urlScalarTypeResolver = $urlScalarTypeResolver;
-    }
     final protected function getURLScalarTypeResolver(): URLScalarTypeResolver
     {
         if ($this->urlScalarTypeResolver === null) {
@@ -127,10 +99,6 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
             $this->urlScalarTypeResolver = $urlScalarTypeResolver;
         }
         return $this->urlScalarTypeResolver;
-    }
-    final public function setUserObjectTypeResolver(UserObjectTypeResolver $userObjectTypeResolver): void
-    {
-        $this->userObjectTypeResolver = $userObjectTypeResolver;
     }
     final protected function getUserObjectTypeResolver(): UserObjectTypeResolver
     {

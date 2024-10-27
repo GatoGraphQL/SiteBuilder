@@ -11,10 +11,6 @@ class CreateEventLinkMutationResolverBridge extends AbstractCreateUpdateEventLin
 {
     private ?CreateEventLinkMutationResolver $createEventLinkMutationResolver = null;
 
-    final public function setCreateEventLinkMutationResolver(CreateEventLinkMutationResolver $createEventLinkMutationResolver): void
-    {
-        $this->createEventLinkMutationResolver = $createEventLinkMutationResolver;
-    }
     final protected function getCreateEventLinkMutationResolver(): CreateEventLinkMutationResolver
     {
         if ($this->createEventLinkMutationResolver === null) {

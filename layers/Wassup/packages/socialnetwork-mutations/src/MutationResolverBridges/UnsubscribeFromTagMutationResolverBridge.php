@@ -14,10 +14,6 @@ class UnsubscribeFromTagMutationResolverBridge extends AbstractTagUpdateUserMeta
     private ?UnsubscribeFromTagMutationResolver $unsubscribeFromTagMutationResolver = null;
     private ?PostTagTypeAPIInterface $postTagTypeAPI = null;
 
-    final public function setUnsubscribeFromTagMutationResolver(UnsubscribeFromTagMutationResolver $unsubscribeFromTagMutationResolver): void
-    {
-        $this->unsubscribeFromTagMutationResolver = $unsubscribeFromTagMutationResolver;
-    }
     final protected function getUnsubscribeFromTagMutationResolver(): UnsubscribeFromTagMutationResolver
     {
         if ($this->unsubscribeFromTagMutationResolver === null) {
@@ -26,10 +22,6 @@ class UnsubscribeFromTagMutationResolverBridge extends AbstractTagUpdateUserMeta
             $this->unsubscribeFromTagMutationResolver = $unsubscribeFromTagMutationResolver;
         }
         return $this->unsubscribeFromTagMutationResolver;
-    }
-    final public function setPostTagTypeAPI(PostTagTypeAPIInterface $postTagTypeAPI): void
-    {
-        $this->postTagTypeAPI = $postTagTypeAPI;
     }
     final protected function getPostTagTypeAPI(): PostTagTypeAPIInterface
     {

@@ -12,10 +12,6 @@ class CreateLocationMutationResolverBridge extends AbstractComponentMutationReso
 {
     private ?CreateLocationMutationResolver $createLocationMutationResolver = null;
 
-    final public function setCreateLocationMutationResolver(CreateLocationMutationResolver $createLocationMutationResolver): void
-    {
-        $this->createLocationMutationResolver = $createLocationMutationResolver;
-    }
     final protected function getCreateLocationMutationResolver(): CreateLocationMutationResolver
     {
         if ($this->createLocationMutationResolver === null) {

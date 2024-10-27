@@ -11,10 +11,6 @@ class CreateUpdateWithCommunityIndividualProfileMutationResolverBridge extends C
 {
     private ?CreateUpdateWithCommunityIndividualProfileMutationResolver $createUpdateWithCommunityIndividualProfileMutationResolver = null;
     
-    final public function setCreateUpdateWithCommunityIndividualProfileMutationResolver(CreateUpdateWithCommunityIndividualProfileMutationResolver $createUpdateWithCommunityIndividualProfileMutationResolver): void
-    {
-        $this->createUpdateWithCommunityIndividualProfileMutationResolver = $createUpdateWithCommunityIndividualProfileMutationResolver;
-    }
     final protected function getCreateUpdateWithCommunityIndividualProfileMutationResolver(): CreateUpdateWithCommunityIndividualProfileMutationResolver
     {
         if ($this->createUpdateWithCommunityIndividualProfileMutationResolver === null) {

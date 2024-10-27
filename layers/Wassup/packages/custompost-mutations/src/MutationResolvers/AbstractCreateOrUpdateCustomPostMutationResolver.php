@@ -23,10 +23,6 @@ abstract class AbstractCreateOrUpdateCustomPostMutationResolver extends Upstream
 
     private ?PostCategoryTypeAPIInterface $postCategoryTypeAPI = null;
 
-    final public function setPostCategoryTypeAPI(PostCategoryTypeAPIInterface $postCategoryTypeAPI): void
-    {
-        $this->postCategoryTypeAPI = $postCategoryTypeAPI;
-    }
     final protected function getPostCategoryTypeAPI(): PostCategoryTypeAPIInterface
     {
         if ($this->postCategoryTypeAPI === null) {
