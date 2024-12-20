@@ -66,7 +66,7 @@
         "pop-schema-pro/data-iteration-meta-directives": "<1.0.6",
         "pop-schema-pro/translate-directive": "<1.0.6",
         "pop-schema-pro/inspect-http-requests": "<1.0.6",
-        "pop-schema-pro/google-translate-directive": "<1.0.6",
+        "pop-schema-pro/google-translate-translation-services": "<1.0.6",
         "pop-schema-pro/function-directives": "<1.0.6",
         "pop-schema-pro/environment-fields": "<1.0.6",
         "pop-schema-pro/apply-field-directive": "<1.0.6",
