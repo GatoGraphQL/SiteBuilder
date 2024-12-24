@@ -74,8 +74,6 @@
         "pop-schema-pro/helper-fields": "<1.0.6",
         "pop-schema-pro/disable-access-access-control": "<1.0.6",
         "pop-schema-pro/cdn-directive": "<1.0.6",
-        "pop-cms-schema/locationposts": "<1.0.6",
-        "pop-cms-schema/locationposts-wp": "<1.0.6",
         "pop-api/api-rest": "<1.0.6",
         "pop-api/api-graphql": "<1.0.6",
         "pop-api/api-endpoints": "<1.0.6",
