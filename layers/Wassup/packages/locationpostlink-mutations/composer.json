@@ -20,8 +20,6 @@
         "getpop-pro/configurable-schema-feedback": "<1.0.6",
         "getpop-pro/trace-tools": "<1.0.6",
         "getpop-pro/scripting-directives": "<1.0.6",
-        "gatographql-pro/polylang-integration-bundle": "<1.0.6",
-        "gatographql-pro/multiple-query-execution-bundle": "<1.0.6",
         "gatographql-pro/query-functions-bundle": "<1.0.6",
         "phpunit-for-gatographql/gatographql-pro": "<1.0.6",
         "phpunit-for-gatographql/gatographql-pro-testing": "<1.0.6",
