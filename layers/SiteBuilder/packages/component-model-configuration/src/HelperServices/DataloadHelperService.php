@@ -7,12 +7,10 @@ namespace PoP\ConfigurationComponentModel\HelperServices;
 use PoP\ComponentModel\Misc\GeneralUtils;
 use PoP\ComponentModel\ComponentProcessors\FilterInputComponentProcessorInterface;
 use PoP\ComponentModel\ComponentProcessors\ComponentProcessorManagerInterface;
-use PoP\Root\Services\BasicServiceTrait;
+use PoP\Root\Services\AbstractBasicService;
 
-class DataloadHelperService implements DataloadHelperServiceInterface
+class DataloadHelperService extends AbstractBasicService implements DataloadHelperServiceInterface
 {
-    use BasicServiceTrait;
-
     private ?ComponentProcessorManagerInterface $componentProcessorManager = null;
 
     final protected function getComponentProcessorManager(): ComponentProcessorManagerInterface
