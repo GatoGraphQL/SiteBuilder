@@ -390,7 +390,7 @@ class NotificationObjectTypeFieldResolver extends AbstractObjectTypeFieldResolve
 
                     case 'Comments':
                         $comment = $this->getCommentTypeAPI()->getComment($notification->object_id);
-                        return $customPostTypeAPI->getPermalink($this->getCommentTypeAPI()->getCommentPostID($comment));
+                        return $customPostTypeAPI->getPermalink($this->getCommentTypeAPI()->getCommentCustomPostID($comment));
                 }
                 return null;
 
