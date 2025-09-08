@@ -155,7 +155,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "8.1",
         "getpop/component-model-configuration": "^1.1",
         "getpop/definitionpersistence": "^1.1",
         "getpop/definitions-emoji": "^1.1",

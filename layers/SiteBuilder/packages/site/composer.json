@@ -156,7 +156,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "8.1",
         "getpop/application": "^1.1",
         "getpop/definitions-base36": "^1.1",
         "getpop/resourceloader": "^1.1"
