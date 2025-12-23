@@ -27,7 +27,7 @@ abstract class MenuItemObjectTypeFieldResolver extends AbstractObjectTypeFieldRe
         $menuItemTypeAPI = MenuItemTypeAPIFacade::getInstance();
         $menuItem = $object;
         switch ($fieldDataAccessor->getFieldName()) {
-            case 'classes':
+            case 'cssClasses':
                 // Copied from nav-menu-template.php function start_el
                 $classes = $menuItemTypeAPI->getMenuItemClasses($menuItem);
                 $classes = empty($classes) ? array() : (array) $classes;
