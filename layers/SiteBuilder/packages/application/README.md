@@ -147,7 +147,7 @@ Because the external application may have different components installed, it is 
 ---
 ---
 
-## PHP versions
+<!-- ## PHP versions
 
 Requirements:
 
@@ -164,7 +164,7 @@ Via [Rector](https://github.com/rectorphp/rector) (dry-run mode):
 
 ```bash
 composer preview-code-downgrade
-```
+``` -->
 
 ## Standards
 

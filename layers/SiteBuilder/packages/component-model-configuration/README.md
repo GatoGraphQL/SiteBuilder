@@ -517,7 +517,7 @@ Finally, given the "modelInstanceId" and URL for any request we can obtain the 3
 
 The merging can be done in the server-side too: If there is no need to cache the configuration on the client, then we can avoid the added complexity of dealing with the three subsections by adding parameter `dataoutputmode=combined` to the URL.
 
-## PHP versions
+<!-- ## PHP versions
 
 Requirements:
 
@@ -534,7 +534,7 @@ Via [Rector](https://github.com/rectorphp/rector) (dry-run mode):
 
 ```bash
 composer preview-code-downgrade
-```
+``` -->
 
 ## Standards
 
